@@ -6,22 +6,22 @@ namespace Targil1
     {
         static void Main(string[] args)
         {
-            int num,  sum = 0, Count = 0;
+            int num,avg ,  sum = 0, Count = 0;
             for (int i = 0; i <= 19; i++)
             {
-                Console.WriteLine("Enter Number of students " + i);
+                Console.WriteLine("Enter  Number of students " + i);
                 num = int.Parse(Console.ReadLine());
-                if (num >= 2500)
+                
                 sum = sum + num;
                 
                 {
-                    Count++;
+                    
 
                 }
             }
-             
+                avg = sum / 20;
                 Console.WriteLine(" ");
-                Console.WriteLine("The overall price of computers that cost more than 2500 is : " + sum);
+                Console.WriteLine("The average of the students is " + avg);
                 
                 
 
