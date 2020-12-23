@@ -1,0 +1,32 @@
+using System;
+
+namespace Targil1
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            int num, avg, sum = 0, Count = 0;
+            // Console.WriteLine("Enter 10 Numbers");
+            for (int i = 0; i <= 9; i++)
+            {
+                Console.WriteLine("Enter Number " + i);
+                num = int.Parse(Console.ReadLine());
+                sum = sum + num;
+                if (num >= 3000)
+                {
+                    Count++;
+
+                }
+            }
+                avg = sum / 10;
+                Console.WriteLine(" ");
+                Console.WriteLine("The AVG is : " + avg);
+                Console.WriteLine("  ");
+                Console.WriteLine("The Number of the numbers that more then 3000 is - " + Count);
+
+            }
+        }
+    }
+
