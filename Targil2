@@ -1,0 +1,32 @@
+using System;
+
+namespace Targil1
+{
+    class Program
+    {
+
+        static void Main(string[] args)
+        {
+            int num, avg, sum = 0, Count = 0;
+            // Console.WriteLine("Enter 10 Numbers");
+            for (int i = 0; i <= 6; i++)
+            {
+                Console.WriteLine("Enter Number of students " + i);
+                num = int.Parse(Console.ReadLine());
+                sum = sum + num;
+                if (num >= 35)
+                {
+                    Count++;
+
+                }
+            }
+                avg = sum ;
+                Console.WriteLine(" ");
+                Console.WriteLine("The number of the students at the school at grade 11 is : " + sum);
+                Console.WriteLine("  ");
+                Console.WriteLine("The number of the classes that have more then 35 students is - " + Count);
+
+            }
+        }
+    }
+
