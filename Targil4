@@ -11,7 +11,8 @@ namespace Targil1
             {
                 Console.WriteLine("Enter  Number of students " + i);
                 num = int.Parse(Console.ReadLine());
-                
+                if (num >= 80)
+                    Count++;
                 sum = sum + num;
                 
                 {
@@ -19,7 +20,7 @@ namespace Targil1
 
                 }
             }
-                avg = sum / 20;
+                avg = sum / Count;
                 Console.WriteLine(" ");
                 Console.WriteLine("The average of the students is " + avg);
                 
